@@ -1,0 +1,4 @@
+-fixed navbar on the left side
+-one page react app
+-contact me form/buttons on the bottom footer section
+
