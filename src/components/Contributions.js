@@ -2,7 +2,9 @@ import React from "react";
 
 const Contributions = () => {
     return (
-        <div></div>
+        <div>
+            <h1>These are my contributions</h1>
+        </div>
     )
 }
 

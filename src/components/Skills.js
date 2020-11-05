@@ -15,9 +15,9 @@ export default class Skills extends Component {
                 {/* <img src={images[0].default}></img>  */}
                 <div>
                     {images.map(e => (
-                        <li>
+                        <div className="row container mx-auto">
                             <img src={e.default}></img>
-                        </li>
+                        </div>
                     ))}
                 </div>           
             </div>

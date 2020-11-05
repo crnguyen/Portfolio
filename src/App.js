@@ -6,8 +6,12 @@ import {
   Route,
   Link
 } from "react-router-dom";
-import About from "./components/About"
-import Skills from "./components/Skills"
+import About from "./components/About";
+import Skills from "./components/Skills";
+import Nav from "./components/Nav";
+import Projects from "./components/Projects";
+import Contributions from "./components/Contributions";
+import Contact from "./components/Contact";
 
 function App() {
   return (
@@ -18,8 +22,14 @@ function App() {
         </h1>
       </header>
       <Router>
-          <Route path='/about' component={About} />
-          <Route path='/skills' component={Skills} />
+        <Nav/>
+          <Route path='/About' component={About} />
+          <Route path='/Skills' component={Skills} />
+          <Route path='/Projects' component={Projects} />
+          <Route path='/Contributions' component={Contributions} />
+          <Route path='/Contact' component={Contact} />
+
+          {/* <Route path='/nav' component={Nav} /> */}
       </Router>
      
     </div>
