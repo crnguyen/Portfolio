@@ -1,6 +1,8 @@
 import React from 'react';
 // import logo from './logo.svg';
 import './App.css';
+import { Route, Switch as Switch2 } from 'react-router-dom';
+import About from "./components/About"
 
 function App() {
   return (
@@ -19,6 +21,9 @@ function App() {
           Learn React
         </a>
       </header>
+      <Switch2>
+        <Route path='/about' component={About} />
+      </Switch2>
     </div>
   );
 }
