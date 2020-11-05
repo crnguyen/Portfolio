@@ -11,8 +11,7 @@ export default class Skills extends Component {
 
         return (
             <div id="skills">
-                <h1 className="heading">Technical Skills</h1>
-                <div className="line"></div>
+                <h1>Technical Skills</h1>
                 {/* <img src={images[0].default}></img>  */}
                 <div>
                     {images.map(e => (
