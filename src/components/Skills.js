@@ -10,7 +10,7 @@ export default class Skills extends Component {
         // console.log(images[0].default)
 
         return (
-            <div id="skills">
+            <div id="Skills">
                 <h1>Technical Skills</h1>
                 {/* <img src={images[0].default}></img>  */}
                 <div>

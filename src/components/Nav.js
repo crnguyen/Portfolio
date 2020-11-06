@@ -1,22 +1,16 @@
 import React from "react";
 import {Link} from "react-router-dom";
-import PropTypes from 'prop-types';
 import AppBar from '@material-ui/core/AppBar';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Divider from '@material-ui/core/Divider';
 import Drawer from '@material-ui/core/Drawer';
 import Hidden from '@material-ui/core/Hidden';
-import IconButton from '@material-ui/core/IconButton';
-import InboxIcon from '@material-ui/icons/MoveToInbox';
 import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-import MailIcon from '@material-ui/icons/Mail';
-import MenuIcon from '@material-ui/icons/Menu';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
+import ProfileImg from "../assets/profilepic.png";
 
 const drawerWidth = 240;
 
@@ -24,28 +18,39 @@ const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
   },
+  logo: {
+    maxWidth: 200,
+    borderRadius: '50%',
+  },
   drawer: {
     [theme.breakpoints.up('sm')]: {
       width: drawerWidth,
       flexShrink: 0,
     },
+    //
+    backgroundColor: 'black',
+    color: 'white',
   },
   appBar: {
     [theme.breakpoints.up('sm')]: {
       width: `calc(100% - ${drawerWidth}px)`,
       marginLeft: drawerWidth,
+      backgroundColor: 'black',
     },
   },
   menuButton: {
     marginRight: theme.spacing(2),
     [theme.breakpoints.up('sm')]: {
       display: 'none',
+      backgroundColor: 'black',
     },
   },
   // necessary for content to be below app bar
   toolbar: theme.mixins.toolbar,
   drawerPaper: {
     width: drawerWidth,
+    backgroundColor: 'black',
+    color: 'white',
   },
   content: {
     flexGrow: 1,
@@ -66,16 +71,18 @@ function Nav(props) {
   const drawer = (
     <div>
       <div className={classes.toolbar} />
-      <Typography> picture goes here</Typography>
+      <Typography>picture goes here
+        <img src={ProfileImg} alt="logo" className={classes.logo} />
+      </Typography>
       <Divider />
       <List>
-        {['About', 'Skills', 'Projects', 'Contributions', 'Contact'].map((text, index) => (
-          <ListItem button key={text} component={Link} to={"/" + text}>
-            <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
-            <ListItemText primary={text} />
-          </ListItem>
+        {['About', 'Skills', 'Projects', 'Contributions', 'Contact'].map((text, i) => (
+          <a key={text} component={Link} href={"#" + text}>
+            <ListItemText primary={text} className="navLinks" />
+          </a>
         ))}
       </List>
+      {/* <a href="#Skills">Skills</a> */}
     </div>
   );
 
@@ -86,15 +93,6 @@ function Nav(props) {
       <CssBaseline />
       <AppBar position="fixed" className={classes.appBar}>
         <Toolbar>
-          <IconButton
-            color="inherit"
-            aria-label="open drawer"
-            edge="start"
-            onClick={handleDrawerToggle}
-            className={classes.menuButton}
-          >
-            <MenuIcon />
-          </IconButton>
           <Typography variant="h6" noWrap>
             Cristina Nguyen | Full Stack Developer
           </Typography>
@@ -134,22 +132,22 @@ function Nav(props) {
       <main className={classes.content}>
         <div className={classes.toolbar} />
         <Typography paragraph>
-          
+          jkfanjkfdkjsfkjdsfdsbfjkdsbjfdsbbfds
         </Typography>
         <Typography paragraph>
-          
+          dskjfndskfndskjfdjksfnkjdsfbjs
         </Typography>
       </main>
     </div>
   );
 }
 
-Nav.propTypes = {
-  /**
-   * Injected by the documentation to work in an iframe.
-   * You won't need it on your project.
-   */
-  window: PropTypes.func,
-};
+// Nav.propTypes = {
+//   /**
+//    * Injected by the documentation to work in an iframe.
+//    * You won't need it on your project.
+//    */
+//   window: PropTypes.func,
+// };
 
 export default Nav;
