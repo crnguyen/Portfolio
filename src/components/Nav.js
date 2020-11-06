@@ -7,6 +7,11 @@ import Drawer from '@material-ui/core/Drawer';
 import Hidden from '@material-ui/core/Hidden';
 import List from '@material-ui/core/List';
 import ListItemText from '@material-ui/core/ListItemText';
+// import ListItemIcon from '@material-ui/core/ListItemIcon';
+// import InboxIcon from '@material-ui/icons/MoveToInbox';
+// import MailIcon from '@material-ui/icons/Mail';
+import IconButton from '@material-ui/core/IconButton';
+import MenuIcon from '@material-ui/icons/Menu';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
@@ -28,9 +33,6 @@ const useStyles = makeStyles((theme) => ({
       width: drawerWidth,
       flexShrink: 0,
     },
-    //
-    backgroundColor: 'black',
-    color: 'white',
   },
   appBar: {
     [theme.breakpoints.up('sm')]: {
@@ -43,7 +45,6 @@ const useStyles = makeStyles((theme) => ({
     marginRight: theme.spacing(2),
     [theme.breakpoints.up('sm')]: {
       display: 'none',
-      backgroundColor: 'black',
     },
   },
   // necessary for content to be below app bar
@@ -72,13 +73,11 @@ function Nav(props) {
   const drawer = (
     <div>
       {/* <div className={classes.toolbar} /> */}
-      <Typography>
-        <img src={ProfileImg} alt="logo" className={classes.logo} />
-      </Typography>
+      <img src={ProfileImg} alt="logo" className={classes.logo} />
       {/* <div className={classes.toolbar} /> */}
       <Divider />
       <List>
-        {['About', 'Skills', 'Projects', 'Contributions', 'Funfacts','Contact'].map((text, i) => (
+        {['About', 'Skills', 'Projects', 'Contributions', 'Funfacts','Contact'].map((text) => (
           <a key={text} component={Link} href={"#" + text}>
             <ListItemText activestyle={{color: 'darkgrey'}} primary={text} className="nav navLinks" />
           </a>
@@ -95,6 +94,15 @@ function Nav(props) {
       <CssBaseline />
       <AppBar position="fixed" className={classes.appBar}>
         <Toolbar>
+        <IconButton
+            color="inherit"
+            aria-label="open drawer"
+            edge="start"
+            onClick={handleDrawerToggle}
+            className={classes.menuButton}
+          >
+            <MenuIcon />
+          </IconButton>
           <Typography variant="h6" noWrap>
             Cristina Nguyen | Full Stack Developer
           </Typography>
@@ -133,9 +141,9 @@ function Nav(props) {
       </nav>
       <main className={classes.content}>
         <div className={classes.toolbar} />
-        <Typography paragraph>
+        
           <Homepage/>
-        </Typography>
+        
       </main>
     </div>
   );

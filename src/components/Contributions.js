@@ -1,6 +1,6 @@
 import React from "react";
 
-const Contributions = () => {
+export default function Contributions () {
     return (
         <div id="Contributions" className="sections">
             <h1>These are my contributions</h1>
@@ -8,4 +8,3 @@ const Contributions = () => {
     )
 }
 
-export default Contributions;
