@@ -78,7 +78,7 @@ function Nav(props) {
       {/* <div className={classes.toolbar} /> */}
       <Divider />
       <List>
-        {['About', 'Skills', 'Projects', 'Contributions', 'Contact'].map((text, i) => (
+        {['About', 'Skills', 'Projects', 'Contributions', 'Funfacts','Contact'].map((text, i) => (
           <a key={text} component={Link} href={"#" + text}>
             <ListItemText activestyle={{color: 'darkgrey'}} primary={text} className="nav navLinks" />
           </a>

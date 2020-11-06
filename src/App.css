@@ -56,10 +56,14 @@ a {
   }
 }
 
+.skillsImgs {
+  min-width: 150px;
+  max-width: 200px;
+}
+
 .sections {
   padding-top: 40px;
-  
-  min-height: 80vh;
+  min-height: 90vh;
   align-items: center;
 }
 

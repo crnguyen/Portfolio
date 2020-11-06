@@ -19,8 +19,8 @@ export default class Skills extends Component {
                     {/* <img src={images[0].default}></img>  */}
                     <Grid container>
                         {images.map(e => (
-                            <Grid item xs={4} cols={3}>
-                                <img src={e.default}></img>
+                            <Grid item xs={12} sm={4} cols={3} spacing={4}>
+                                <img className="skillsImgs" src={e.default}></img>
                             </Grid>
                         ))}
                     </Grid>           

@@ -4,19 +4,20 @@ import {
 import About from "./About";
 import Contact from "./Contact";
 import Contributions from "./Contributions";
-import Nav from "./Nav";
 import Projects from "./Projects";
 import Skills from "./Skills";
+import Funfacts from "./Funfacts"
 
 function Homepage(){
     return (
         <div>
             <Router>
                 <About />
-                <Contact />
-                <Contributions />
-                <Projects />
                 <Skills />
+                <Projects />
+                <Contributions />
+                <Funfacts />
+                <Contact />
             </Router>
         </div>
     )
