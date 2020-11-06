@@ -11,6 +11,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import ProfileImg from "../assets/circle-cropped.png";
+import Homepage from "./Homepage";
 
 const drawerWidth = 240;
 
@@ -133,22 +134,11 @@ function Nav(props) {
       <main className={classes.content}>
         <div className={classes.toolbar} />
         <Typography paragraph>
-          jkfanjkfdkjsfkjdsfdsbfjkdsbjfdsbbfds
-        </Typography>
-        <Typography paragraph>
-          dskjfndskfndskjfdjksfnkjdsfbjs
+          <Homepage/>
         </Typography>
       </main>
     </div>
   );
 }
-
-// Nav.propTypes = {
-//   /**
-//    * Injected by the documentation to work in an iframe.
-//    * You won't need it on your project.
-//    */
-//   window: PropTypes.func,
-// };
 
 export default Nav;
