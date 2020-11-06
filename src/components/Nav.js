@@ -10,7 +10,7 @@ import ListItemText from '@material-ui/core/ListItemText';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
-import ProfileImg from "../assets/profilepic.png";
+import ProfileImg from "../assets/circle-cropped.png";
 
 const drawerWidth = 240;
 
@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
   },
   logo: {
     maxWidth: 200,
-    borderRadius: '50%',
+    paddingTop: 30,
   },
   drawer: {
     [theme.breakpoints.up('sm')]: {
@@ -70,15 +70,16 @@ function Nav(props) {
 
   const drawer = (
     <div>
-      <div className={classes.toolbar} />
-      <Typography>picture goes here
+      {/* <div className={classes.toolbar} /> */}
+      <Typography>
         <img src={ProfileImg} alt="logo" className={classes.logo} />
       </Typography>
+      {/* <div className={classes.toolbar} /> */}
       <Divider />
       <List>
         {['About', 'Skills', 'Projects', 'Contributions', 'Contact'].map((text, i) => (
           <a key={text} component={Link} href={"#" + text}>
-            <ListItemText primary={text} className="navLinks" />
+            <ListItemText primary={text} className="nav navLinks" />
           </a>
         ))}
       </List>

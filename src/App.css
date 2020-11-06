@@ -2,17 +2,44 @@ html {
   scroll-behavior: smooth;
 }
 
-.navLinks {
-  padding: 10px;
+a {
+  text-decoration: none;
+}
+
+.nav{
+  position: relative;
+  display: block;
   color: white;
+  font-size: 14px;
+  font-family: "montserrat";
+  margin: 30px 0;
+  padding: 14px 60px;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 1s all ease;
 }
 
-.navLinks:hover {
-  background-color: white;
+.nav::before{
+  background-color: darkgray;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: -1;
+  transition: all 0.6s ease;
+}
+
+.navLinks::before{
+  width: 0%;
+  height: 100%;
   color: black;
-  opacity: 0.8;
 }
 
+.navLinks:hover::before{
+  width: 100%;
+  color: black;
+}
 
 .App {
   text-align: center;
