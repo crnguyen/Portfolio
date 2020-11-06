@@ -1,4 +1,7 @@
 import React, {Component} from 'react';
+import { makeStyles } from '@material-ui/core/styles';
+import Paper from '@material-ui/core/Paper';
+import Grid from '@material-ui/core/Grid';
 
 export default class Skills extends Component {
     render() {
@@ -10,17 +13,19 @@ export default class Skills extends Component {
         // console.log(images[0].default)
 
         return (
-            <div id="Skills" className="sections">
-                <h1>Technical Skills</h1>
-                {/* <img src={images[0].default}></img>  */}
-                <div>
-                    {images.map(e => (
-                        <div className="row container mx-auto">
-                            <img src={e.default}></img>
-                        </div>
-                    ))}
-                </div>           
-            </div>
+            <React.Fragment>
+                <div id="Skills" className="sections">
+                    <h1>Technical Skills</h1>
+                    {/* <img src={images[0].default}></img>  */}
+                    <Grid container>
+                        {images.map(e => (
+                            <Grid item xs={4} cols={3}>
+                                <img src={e.default}></img>
+                            </Grid>
+                        ))}
+                    </Grid>           
+                </div>
+            </React.Fragment>
         )
     }
 }
