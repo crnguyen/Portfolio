@@ -39,6 +39,7 @@ const useStyles = makeStyles((theme) => ({
       width: `calc(100% - ${drawerWidth}px)`,
       marginLeft: drawerWidth,
       backgroundColor: 'black',
+      
     },
   },
   menuButton: {
@@ -53,6 +54,8 @@ const useStyles = makeStyles((theme) => ({
     width: drawerWidth,
     backgroundColor: 'black',
     color: 'white',
+    textAlign: 'center'
+    
   },
   content: {
     flexGrow: 1,
@@ -71,7 +74,7 @@ function Nav(props) {
   };
 
   const drawer = (
-    <div>
+    <div >
       {/* <div className={classes.toolbar} /> */}
       <img src={ProfileImg} alt="logo" className={classes.logo} />
       {/* <div className={classes.toolbar} /> */}
@@ -83,7 +86,6 @@ function Nav(props) {
           </a>
         ))}
       </List>
-      {/* <a href="#Skills">Skills</a> */}
     </div>
   );
 
@@ -119,6 +121,7 @@ function Nav(props) {
             onClose={handleDrawerToggle}
             classes={{
               paper: classes.drawerPaper,
+
             }}
             ModalProps={{
               keepMounted: true, // Better open performance on mobile.
