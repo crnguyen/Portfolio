@@ -79,7 +79,7 @@ function Nav(props) {
       <List>
         {['About', 'Skills', 'Projects', 'Contributions', 'Contact'].map((text, i) => (
           <a key={text} component={Link} href={"#" + text}>
-            <ListItemText primary={text} className="nav navLinks" />
+            <ListItemText activestyle={{color: 'darkgrey'}} primary={text} className="nav navLinks" />
           </a>
         ))}
       </List>
