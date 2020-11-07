@@ -67,6 +67,11 @@ a {
   align-items: center;
 }
 
+.resume {
+  display: flex;
+  justify-content: center;
+}
+
 .App-link {
   color: #61dafb;
 }

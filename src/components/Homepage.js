@@ -6,7 +6,8 @@ import Contact from "./Contact";
 import Contributions from "./Contributions";
 import Projects from "./Projects";
 import Skills from "./Skills";
-import Funfacts from "./Funfacts"
+import Funfacts from "./Funfacts";
+import Resume from "./Resume";
 
 function Homepage(){
     return (
@@ -18,8 +19,11 @@ function Homepage(){
                 <Contributions />
                 <Funfacts />
                 <Contact />
+                <Resume />
             </Router>
         </div>
+        // <Route exact path="/" component={Homepage} />
+        // <Route path="/AboutMe" component={About} />
     )
 }
 

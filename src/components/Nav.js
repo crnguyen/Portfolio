@@ -39,7 +39,6 @@ const useStyles = makeStyles((theme) => ({
       width: `calc(100% - ${drawerWidth}px)`,
       marginLeft: drawerWidth,
       backgroundColor: 'black',
-      
     },
   },
   menuButton: {
@@ -55,7 +54,6 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: 'black',
     color: 'white',
     textAlign: 'center'
-    
   },
   content: {
     flexGrow: 1,
@@ -80,7 +78,7 @@ function Nav(props) {
       {/* <div className={classes.toolbar} /> */}
       <Divider />
       <List>
-        {['About', 'Skills', 'Projects', 'Contributions', 'Funfacts','Contact'].map((text) => (
+        {['About', 'Skills', 'Projects', 'Contributions', 'Funfacts','Contact','Resume'].map((text) => (
           <a key={text} component={Link} href={"#" + text}>
             <ListItemText activestyle={{color: 'darkgrey'}} primary={text} className="nav navLinks" />
           </a>
@@ -121,10 +119,10 @@ function Nav(props) {
             onClose={handleDrawerToggle}
             classes={{
               paper: classes.drawerPaper,
-
             }}
             ModalProps={{
               keepMounted: true, // Better open performance on mobile.
+            //   disablePortal: true,
             }}
           >
             {drawer}
@@ -144,9 +142,7 @@ function Nav(props) {
       </nav>
       <main className={classes.content}>
         <div className={classes.toolbar} />
-        
           <Homepage/>
-        
       </main>
     </div>
   );
