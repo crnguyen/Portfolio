@@ -17,7 +17,7 @@ export default function Resume () {
             <Document className="resume" file={myresume} onLoadSuccess={onDocumentLoadSuccess}>
                 <Page pageNumber={pageNumber} />
             </Document>
-            <p>Page {pageNumber} of {numPages}</p>
+            {/* <p>Page {pageNumber} of {numPages}</p> */}
 
             <a href={myresume} download>Download a copy</a>
         </div>
