@@ -20,7 +20,7 @@ a {
 }
 
 .nav::before{
-  background-color: darkgray;
+  background-color: darkcyan;
   content: "";
   position: absolute;
   top: 50%;
