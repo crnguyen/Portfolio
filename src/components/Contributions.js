@@ -20,7 +20,6 @@ export default function Contributions () {
 
                 {/* <p>Python For Beginners</p>
                 <a href="https://github.com/crnguyen/Python-for-beginner" class="button">Site</a> */}
-
             </div>
         </div>
     )

@@ -10,7 +10,7 @@ import TimeZone from "../assets/projects/TimeZoneConverter.png" //placeholder fo
 export default function Projects() {
     return (
         <div id="Projects" className="sections">
-            <h1 className="titleDecoration">These are my projects</h1>
+            <h1 className="titleDecoration">Projects</h1>
 
             <div className="allProjects">
 

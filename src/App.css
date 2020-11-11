@@ -122,6 +122,12 @@ img {
   opacity: 0.8;
 }
 
+.funFactPics {
+  height: 250px;
+  width: 250px;
+  opacity: 0.8;
+}
+
 .container {
   position: relative;
   height: 360px;
