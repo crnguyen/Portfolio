@@ -3,7 +3,7 @@ import React from "react";
 export default function Contributions () {
     return (
         <div id="Contributions" className="sections">
-            <h1>Open Source Contributions</h1>
+            <h1 className="titleDecoration">Open Source Contributions</h1>
             <p>A collection of github projects/sites that I'm working on with others.</p>
             <div>
                 <p>sButtons</p>
