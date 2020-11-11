@@ -9,16 +9,37 @@ export default function Projects() {
         <div id="Projects" className="sections">
             <h1 className="titleDecoration">These are my projects</h1>
 
-            <div className="hoverBox">
-                <img alt="reciperec" className="projectPics hover-bottom" src={RecipeRec} title="buzz hover text"></img>
-                <div className="hover-top hover-slideup">
-                    <p className="hover-text">testingtesting</p>
+            <div className="allProjects">
+
+                <div className="container">
+                    <img alt="reciperec" className="projectPics" src={RecipeRec}></img>
+                    <div className="centered">
+                        <div>Recipe Rec</div>
+                    </div>
                 </div>
+
+                <div className="container">
+                    <img alt="foodfuse" className="projectPics" src={FoodFuse}></img>
+                    <div className="centered overlay overlayRight">
+                        <div>Food Fuse</div>
+                    </div>
+                </div>
+
+                <div className="container">
+                    <img alt="pingpong" className="projectPics" src={PingPong}></img>
+                    <div className="centered overlayRight">
+                        <div>Ping Pong</div>
+                    </div>
+                </div>
+
+                <div className="container">
+                    <img alt="apartmate" className="projectPics" src={Apartmate}></img> 
+                    <div className="centered">
+                        <div>ApartMate</div>
+                    </div>
+                </div>   
             </div>
 
-            <img alt="foodfuse" className="projectPics" src={FoodFuse}></img>
-            <img alt="pingpong" className="projectPics" src={PingPong}></img>
-            <img alt="apartmate" className="projectPics" src={Apartmate}></img>    
         </div>
 
     )

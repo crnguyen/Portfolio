@@ -6,11 +6,6 @@ a {
   text-decoration: none;
 }
 
-.projectPics {
-  height: 360px;
-  width: 360px;
-}
-
 .nav{
   position: relative;
   display: block;
@@ -69,7 +64,7 @@ a {
 .sections {
   padding-top: 40px;
   min-height: 90vh;
-  align-items: center;
+  /* align-items: center; */
 }
 
 .coloredText {
@@ -84,6 +79,7 @@ a {
 
 .titleDecoration {
   text-decoration: underline overline black;
+  text-transform: uppercase;
 }
 
 .resume {
@@ -113,32 +109,64 @@ img {
   font-size: 25px;
 }
 
-.hoverBox .hover-slideup {
-	-moz-transform: translateY(100%);
-	-webkit-transform: translateY(100%);
-	-ms-transform: translateY(100%);
-  transform: translateY(100%);
+
+.allProjects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.projectPics {
+  height: 360px;
+  width: 360px;
+  opacity: 0.8;
+}
+
+.container {
+  position: relative;
   height: 360px;
   width: 360px;
 }
-.hoverBox:hover .hover-slideup,
-.hoverBox.active .hover-slideup {
-	-moz-transform: translateY(0);
-	-webkit-transform: translateY(0);
-	-ms-transform: translateY(0);
-	transform: translateY(0);
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  color: white;
+
+  transition: all 0.3s ease; 
+  opacity: 0; 
+  background-color: black; 
 }
 
-.hvrbox .hvrbox-layer_slideup {
-	-moz-transform: translateY(100%);
-	-webkit-transform: translateY(100%);
-	-ms-transform: translateY(100%);
-	transform: translateY(100%);
+.container .centered {
+  visibility:hidden;
+} 
+
+.container:hover .centered {
+  visibility:visible;
 }
-.hvrbox:hover .hvrbox-layer_slideup,
-.hvrbox.active .hvrbox-layer_slideup {
-	-moz-transform: translateY(0);
-	-webkit-transform: translateY(0);
-	-ms-transform: translateY(0);
-	transform: translateY(0);
-}
+
+/* .overlay{ 
+  transition: all 0.3s ease; 
+  opacity: 0; 
+  background-color: black; 
+}  */
+
+.container:hover .overlay{ 
+  opacity: 1; 
+} 
+
+.overlayRight{ 
+  height: 100%; 
+  width: 0; 
+  right: 75px; 
+  background-color: black;
+  text-align: center;
+} 
+
+.container:hover .overlayRight{ 
+width: 360px; 
+} 
