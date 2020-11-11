@@ -15,7 +15,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
-import ProfileImg from "../assets/circle-cropped.png";
+import ProfileImg from "../assets/profilepic.png";
 import Homepage from "./Homepage";
 
 const drawerWidth = 240;
