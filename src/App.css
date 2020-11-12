@@ -109,7 +109,6 @@ img {
   font-size: 25px;
 }
 
-
 .allProjects {
   display: flex;
   flex-wrap: wrap;
@@ -176,3 +175,18 @@ img {
 .container:hover .overlayRight{ 
 width: 360px; 
 } 
+
+.funFactContent {
+  display: flex;
+  justify-content: center;
+}
+
+.funFactContent img {
+  margin-right: 10px;
+  display: block;
+}
+
+.funFactContent h3,
+.funFactContent p {
+  margin: 5px;
+}
