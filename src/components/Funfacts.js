@@ -8,10 +8,12 @@ export default function Funfacts() {
 
             <div class="funFactContent">
                 <img alt="kona" className="funFactPics" src={Kona}></img>
-                <div class="funFactText">
-                    <h3><strong>I have a 1 year old corgi/aussie mix named Kona!</strong></h3>
-                </div>
+                
+                <span><h3><strong>I have a 1 year old corgi/aussie mix named Kona!</strong></h3>
+                    </span>
+                
             </div>
+
             <div class="funFactContent">
                 <div class="funFactText">
                     <h3><strong>I have a 1 year old corgi/aussie mix named Kona!</strong></h3>

@@ -125,6 +125,7 @@ img {
   height: 250px;
   width: 250px;
   opacity: 0.8;
+  border-radius: 50%;
 }
 
 .container {
@@ -179,7 +180,9 @@ width: 360px;
 .funFactContent {
   display: flex;
   justify-content: center;
+  align-items:center;
 }
+
 
 .funFactContent img {
   margin-right: 10px;
