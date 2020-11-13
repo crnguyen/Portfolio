@@ -271,17 +271,52 @@ width: 360px;
 
 /* large screens */
 @media only screen and (min-width: 1824px){
-  .allProjects {
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-
   .sections {
     min-height: 50vh;
   }
 
+  /* -------about section---- */
   .aboutSection {
-    padding-left: 150px;
-    padding-right: 150px;
+    padding-left: 170px;
+    padding-right: 170px;
+  }
+
+  .aboutOpening1 {
+    font-size: 70px;
+  }
+  
+  .aboutOpening2 {
+    font-size: 50px;
+  }
+
+  /* -------projects section------ */
+  .allProjects {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .projectPics {
+    height: 560px;
+    width: 560px;
+  }
+
+  .container {
+    height: 560px;
+    width: 560px;
+  }
+
+  .container:hover .overlayRight{ 
+    width: 560px; 
+  } 
+
+  .textDetails {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+  }
+
+  .projectTitles {
+    padding-bottom: 20px;
+    font-size: 28px;
   }
 }
