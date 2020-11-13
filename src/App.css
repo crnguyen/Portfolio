@@ -183,6 +183,11 @@ width: 360px;
   align-items:center;
 }
 
+.funFactText {
+  width: 50%;
+  overflow-wrap: break-word;
+  text-align: left;
+}
 
 .funFactContent img {
   margin-right: 10px;
@@ -193,11 +198,3 @@ width: 360px;
 .funFactContent p {
   margin: 5px;
 }
-
-/* .calendlyContainer {
-  text-align: center;
-}
-
-.calendly-inline-widget {
-  display: inline-block;
-} */
