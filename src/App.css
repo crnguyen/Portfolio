@@ -62,8 +62,8 @@ a {
 }
 
 .sections {
-  padding-top: 40px;
-  min-height: 90vh;
+  padding-top: 30px;
+  min-height: 70vh;
   /* align-items: center; */
 }
 
@@ -111,7 +111,6 @@ img {
 }
 
 #About {
-  padding: 100px;
   font-size: 25px;
   font-family: 'Oswald', sans-serif;
 }
@@ -131,6 +130,15 @@ img {
   flex-wrap: wrap;
   justify-content: center;
   /* align-items: center; */
+}
+
+.aboutSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .projectPics {
@@ -220,7 +228,7 @@ width: 360px;
 .funFactContent {
   display: flex;
   justify-content: center;
-  align-items:center;
+  align-items: center;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -259,4 +267,21 @@ width: 360px;
 
 .calendlyContainer {
   padding-top: 15px;
+}
+
+/* large screens */
+@media only screen and (min-width: 1824px){
+  .allProjects {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .sections {
+    min-height: 50vh;
+  }
+
+  .aboutSection {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
 }
