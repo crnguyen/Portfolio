@@ -11,12 +11,12 @@ a {
   display: block;
   color: white;
   font-size: 14px;
-  font-family: "montserrat";
   margin: 30px 0;
   padding: 14px 60px;
   text-transform: uppercase;
   overflow: hidden;
   transition: 1s all ease;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .nav::before{
@@ -45,20 +45,20 @@ a {
   text-align: center;
 }
 
-.App-logo {
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
-}
+} */
 
-@media (prefers-reduced-motion: no-preference) {
+/* @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
+} */
 
 .skillsImgs {
-  min-width: 150px;
-  max-width: 200px;
+  min-width: 50px;
+  max-width: 100px;
 }
 
 .sections {
@@ -68,57 +68,86 @@ a {
 }
 
 .coloredText {
-  color: blue;
+  color: darkcyan;
   /* text-decoration: underline dotted darkgreen; */
   box-shadow:
     inset 0 -0.075em white,
-    inset 0 -0.1em purple,
+    inset 0 -0.1em blue,
     inset 0 -0.15em white,
-    inset 0 -0.175em purple;
+    inset 0 -0.175em blue;
 }
 
 .titleDecoration {
-  text-decoration: underline overline black;
+  text-decoration: underline black;
   text-transform: uppercase;
+  font-family: 'Quattrocento Sans', sans-serif;
+}
+
+.titleDecoration:hover {
+  text-shadow: darkcyan;
 }
 
 .resume {
   display: flex;
   justify-content: center;
+  padding-top: 30px;
 }
 
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
+/* @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
-}
+} */
 
 img {
   width: 300px;
 }
 
 #About {
-  padding: 150px;
+  padding: 100px;
   font-size: 25px;
+  font-family: 'Oswald', sans-serif;
+}
+
+.aboutOpening1 {
+  font-size: 55px;
+}
+
+.aboutOpening2 {
+  font-size: 30px;
+  text-align: left;
 }
 
 .allProjects {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  /* align-items: center; */
 }
 
 .projectPics {
   height: 360px;
   width: 360px;
   opacity: 0.8;
+}
+
+.projectTitles {
+  padding-bottom: 15px;
+  font-weight: bold;
+  font-family: 'Bungee', cursive;
+}
+
+.projectButtons {
+  width: 300px;
+  height: 50px;
+  font-size: auto;
 }
 
 .funFactPics {
@@ -141,7 +170,6 @@ img {
   transform: translate(-50%, -50%);
   font-size: 20px;
   color: white;
-
   transition: all 0.3s ease; 
   opacity: 0; 
   background-color: black; 
@@ -162,7 +190,11 @@ img {
 }  */
 
 .container:hover .overlay{ 
-  opacity: 1; 
+  opacity: 0.86; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 } 
 
 .overlayRight{ 
@@ -173,6 +205,13 @@ img {
   text-align: center;
 } 
 
+.textDetails {
+  text-align: left;
+  padding: 15px;
+  font-size: 15px;
+  font-family: 'Montserrat', sans-serif;
+}
+
 .container:hover .overlayRight{ 
 width: 360px; 
 } 
@@ -181,6 +220,7 @@ width: 360px;
   display: flex;
   justify-content: center;
   align-items:center;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .funFactText {
@@ -197,4 +237,25 @@ width: 360px;
 .funFactContent h3,
 .funFactContent p {
   margin: 5px;
+}
+
+.linkButton {
+  border: 2px solid black;
+  border-radius: 5px;
+  font-size: 15px;
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  padding: 10px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.linkButton:hover {
+  background-image: linear-gradient(to right, darkcyan , pink);
+  font-weight: bold;
+  font-stretch: expanded;
+}
+
+.calendlyContainer {
+  padding-top: 15px;
 }

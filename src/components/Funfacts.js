@@ -10,7 +10,7 @@ export default function Funfacts() {
             <div class="funFactContent">
                 <img alt="kona" className="funFactPics" src={Kona}></img>
                 <div class="funFactText">
-                <span><h3><strong>I have a 1 year old puppy named Kona! He is 75% corgi and 25% australian shepherd. </strong></h3>
+                <span><h3><strong>I have a 1 year old puppy named Kona. He is 75% corgi, 25% australian shepherd, and 100% sass. </strong></h3>
                     </span>
                 </div>
                 
@@ -18,7 +18,7 @@ export default function Funfacts() {
 
             <div class="funFactContent">
                 <div class="funFactText">
-                    <h3><strong>I love traveling! Pre-pandemic, I have traveled to Hawaii, New Orleans, Oregon, and Washington. In the future, I hope to visit other countries.</strong></h3>
+                    <h3><strong>I love traveling! Pre-pandemic, I have traveled to Hawaii, New Orleans, Oregon, Ohio, and Washington. In the future, I hope to get the chance to travel outside of the US.</strong></h3>
                 </div>
                 <img alt="travel" className="funFactPics" src={Travel}></img>
             </div>
