@@ -1,4 +1,4 @@
-## Cristina Nguyen Portfolio
+# Cristina Nguyen Portfolio
 
 https://cristina-nguyen.com/
 
