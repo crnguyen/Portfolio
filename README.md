@@ -7,3 +7,7 @@ deploy instructions
 
 * npm run build
 * firebase deploy --only hosting
+
+to do
+---
+* fix mobile layout
