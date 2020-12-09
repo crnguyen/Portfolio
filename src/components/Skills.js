@@ -20,7 +20,7 @@ export default class Skills extends Component {
                     {/* <img src={images[0].default}></img>  */}
                     <Grid container>
                         {images.map(e => (
-                            <Grid item xs={12} sm={4} cols={3}>
+                            <Grid item xs={6} sm={4} cols={3}>
                                 <img alt="" key={e} data-aos="zoom-in" className="skillsImgs" src={e.default}></img> 
                             </Grid>
                         ))}
