@@ -7,8 +7,7 @@ export default function About () {
     });
         return (
             <div id="About" className="sections aos-item">
-                
-                    <h1 className="aboutOpening1" data-aos="fade-right" data-aos-easing="ease-in-sine">Hello, World!</h1>
+                <h1 className="aboutOpening1" data-aos="fade-right" data-aos-easing="ease-in-sine">Hello, World!</h1>
                 <div className="aboutSection">
                     <h2 className="aboutOpening2" data-aos="fade-left" data-aos-easing="ease-in-sine" 
                     data-aos-delay="2000">My name is Cristina and I'm a <b className="coloredText">
