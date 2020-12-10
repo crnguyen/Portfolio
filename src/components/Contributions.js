@@ -22,7 +22,7 @@ export default function Contributions () {
                     <img alt="ehbiz" className="projectPics" src={ehBiz}></img>
                     <div className="centered overlay overlayRight">
                         <div className="projectTitles">ehBizOps</div>
-                        <Button className="projectButtons" variant="outlined" color="inherit" href="https://ehbizops.web.app/">Visit Site</Button>
+                        <Button className="projectButtons" variant="outlined" color="inherit" href="https://ehbizops.com/">Visit Site</Button>
                         <div className="textDetails">Contributed to creating a React app for business management.</div>
                     </div>
                 </div>
