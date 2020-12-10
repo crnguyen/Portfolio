@@ -23,7 +23,7 @@ export default function Contributions () {
                     <div className="centered overlay overlayRight">
                         <div className="projectTitles">ehBizOps</div>
                         <Button className="projectButtons" variant="outlined" color="inherit" href="https://ehbizops.com/">Visit Site</Button>
-                        <div className="textDetails">Contributed to creating a React app for business management.</div>
+                        <div className="textDetails">Business management app for a startup. Worked on the frontend and helped with dashboard creation using React and Vuexy. </div>
                     </div>
                 </div>
 
