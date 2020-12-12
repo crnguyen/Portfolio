@@ -248,15 +248,7 @@ width: 360px;
   margin: 5px;
 }
 
-.linkButton {
-  border: 2px solid black;
-  border-radius: 5px;
-  font-size: 15px;
-  text-decoration: none;
-  color: white;
-  background-color: black;
-  padding: 10px;
-  font-family: 'Montserrat', sans-serif;
+.socialIcons {
   margin: 5px;
 }
 
