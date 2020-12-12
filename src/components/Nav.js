@@ -104,7 +104,7 @@ function Nav(props) {
           >
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" noWrap>
+          <Typography className="navName" variant="h6" noWrap>
             Cristina Nguyen | Full Stack Developer
           </Typography>
         </Toolbar>

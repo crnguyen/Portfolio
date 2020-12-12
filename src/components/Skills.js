@@ -16,7 +16,7 @@ export default class Skills extends Component {
         return (
             <React.Fragment>
                 <div id="Skills" className="sections titleDecoration">
-                    <h1>Technical Skills</h1>
+                    <h1 className="titleDecoration">Technical Skills</h1>
                     {/* <img src={images[0].default}></img>  */}
                     <Grid container>
                         {images.map(e => (
