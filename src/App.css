@@ -291,3 +291,41 @@ width: 360px;
     font-size: 28px;
   }
 }
+
+/* PHONE */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    /* -------projects section------ */
+  /* .allProjects {
+    padding-left: 60px;
+    padding-right: 60px;
+  } */
+
+  .projectPics {
+    height: auto;
+    width: 100vw;
+  }
+
+  .container {
+    height: auto;
+    width: 100vw;
+  }
+
+  .container:hover .overlayRight{ 
+    width: 100vw; 
+  } 
+
+  .textDetails {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 25px;
+  }
+
+  .projectTitles {
+    padding-bottom: 20px;
+    font-size: 35px;
+  }
+
+}
