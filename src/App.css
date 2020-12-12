@@ -257,6 +257,7 @@ width: 360px;
   background-color: black;
   padding: 10px;
   font-family: 'Montserrat', sans-serif;
+  margin: 5px;
 }
 
 .linkButton:hover {
