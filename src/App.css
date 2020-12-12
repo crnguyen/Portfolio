@@ -252,6 +252,10 @@ width: 360px;
   margin: 5px;
 }
 
+.socialIcons:hover {
+  opacity: 0.5;
+}
+
 .linkButton:hover {
   background-image: linear-gradient(to right, darkcyan , pink);
   font-weight: bold;
