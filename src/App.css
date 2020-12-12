@@ -45,17 +45,6 @@ a {
   text-align: center;
 }
 
-/* .App-logo {
-  height: 40vmin;
-  pointer-events: none;
-} */
-
-/* @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-} */
-
 .skillsImgs {
   min-width: 50px;
   max-width: 100px;
@@ -96,15 +85,6 @@ a {
 .App-link {
   color: #61dafb;
 }
-
-/* @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
 
 img {
   width: 300px;
@@ -192,12 +172,6 @@ img {
   visibility:visible;
 }
 
-/* .overlay{ 
-  transition: all 0.3s ease; 
-  opacity: 0; 
-  background-color: black; 
-}  */
-
 .container:hover .overlay{ 
   opacity: 0.86; 
   display: flex;
@@ -266,7 +240,7 @@ width: 360px;
   padding-top: 15px;
 }
 
-/* large screens */
+/* LARGE SCREENS */
 @media only screen and (min-width: 1824px){
   .sections {
     min-height: 50vh;
