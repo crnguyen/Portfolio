@@ -357,4 +357,9 @@ width: 360px;
   .funFactContent p {
     margin: 10px;
   }
+
+  .skillsImgs {
+    min-width: 100px;
+    max-width: 150px;
+  }
 }
