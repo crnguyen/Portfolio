@@ -11,3 +11,4 @@ deploy instructions
 to do
 ---
 * fix mobile layout
+* make interests/about section a carousel
