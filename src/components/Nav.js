@@ -35,11 +35,11 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   appBar: {
-    backgroundColor: '#333333',
+    backgroundColor: '#181818',
     [theme.breakpoints.up('sm')]: {
       width: `calc(100% - ${drawerWidth}px)`,
       marginLeft: drawerWidth,
-      backgroundColor: '#333333',
+      backgroundColor: '#181818',
     },
   },
   menuButton: {
@@ -52,7 +52,7 @@ const useStyles = makeStyles((theme) => ({
   toolbar: theme.mixins.toolbar,
   drawerPaper: {
     width: drawerWidth,
-    backgroundColor: '#333333',
+    backgroundColor: '#181818',
     color: 'white',
     textAlign: 'center'
   },
