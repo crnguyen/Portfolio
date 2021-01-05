@@ -7,9 +7,6 @@ import Drawer from '@material-ui/core/Drawer';
 import Hidden from '@material-ui/core/Hidden';
 import List from '@material-ui/core/List';
 import ListItemText from '@material-ui/core/ListItemText';
-// import ListItemIcon from '@material-ui/core/ListItemIcon';
-// import InboxIcon from '@material-ui/icons/MoveToInbox';
-// import MailIcon from '@material-ui/icons/Mail';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import Toolbar from '@material-ui/core/Toolbar';
@@ -74,9 +71,7 @@ function Nav(props) {
 
   const drawer = (
     <div >
-      {/* <div className={classes.toolbar} /> */}
       <img src={ProfileImg} alt="logo" className={classes.logo} />
-      {/* <div className={classes.toolbar} /> */}
       <Divider />
       <List>
         {['About', 'Skills', 'Projects', 'Contributions', 'Funfacts','Contact','Resume'].map((text) => (
