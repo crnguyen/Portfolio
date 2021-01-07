@@ -7,7 +7,6 @@ export default function Funfacts() {
     return (
         <div id="Funfacts" className="sections">
             <h1 className="titleDecoration">fun facts/interests</h1>
-
             <div class="funFactContent">
                 <img alt="kona" className="funFactPics" src={Kona}></img>
                 <div class="funFactText">
@@ -16,14 +15,12 @@ export default function Funfacts() {
                     </span>
                 </div>  
             </div>
-
             <div class="funFactContent">
                 <div class="funFactText">
                     <h3><strong>I love traveling! Pre-pandemic, I have traveled to Hawaii, New Orleans, Oregon, Ohio, and Washington. In the future, I hope to get the chance to travel outside of the US.</strong></h3>
                 </div>
                 <img alt="travel" className="funFactPics" src={Travel}></img>
             </div>
-
             <div class="funFactContent">
                 <img alt="salesOps" className="funFactPics" src={SOPS}></img>
                 <div class="funFactText">

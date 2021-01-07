@@ -22,8 +22,6 @@ function Homepage(){
                 <Resume />
             </Router>
         </div>
-        // <Route exact path="/" component={Homepage} />
-        // <Route path="/AboutMe" component={About} />
     )
 }
 

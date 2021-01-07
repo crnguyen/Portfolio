@@ -8,7 +8,6 @@ export default function Contributions () {
         <div id="Contributions" className="sections">
             <h1 className="titleDecoration">Projects/Open Source Contributions</h1>
             <h4>A collection of github projects/sites that I'm working on with others.</h4>
-
             <div className="allProjects">
                 <div className="container">
                     <img alt="sbuttons" className="projectPics" src={Sbuttons}></img>
@@ -26,7 +25,6 @@ export default function Contributions () {
                         <div className="textDetails">Business management app for a startup. Worked on the frontend and helped with dashboard creation using React and Vuexy. </div>
                     </div>
                 </div>
-
                 {/* <p>Python For Beginners</p>
                 <a href="https://github.com/crnguyen/Python-for-beginner" class="button">Site</a> */}
             </div>

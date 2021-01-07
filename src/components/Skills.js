@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import Grid from '@material-ui/core/Grid';
 import aos from 'aos';
 import 'aos/dist/aos.css';
-
 export default class Skills extends Component {
     render() {
         aos.init({duration: 2000});

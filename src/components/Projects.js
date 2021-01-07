@@ -11,9 +11,7 @@ export default function Projects() {
     return (
         <div id="Projects" className="sections">
             <h1 className="titleDecoration">Projects</h1>
-
             <div className="allProjects">
-
                 <div className="container">
                     <img alt="reciperec" className="projectPics" src={RecipeRec}></img>
                     <div className="centered overlay overlayRight">
@@ -23,7 +21,6 @@ export default function Projects() {
                         <div className="textDetails">An app that captures data from the Spoonacular API. Search, and favorite/edit recipes, and interact with other users through comments.</div>
                     </div>
                 </div>
-
                 <div className="container">
                     <img alt="foodfuse" className="projectPics" src={FoodFuse}></img>
                     <div className="centered overlay overlayRight">
@@ -33,7 +30,6 @@ export default function Projects() {
                         <div className="textDetails">Search food services sites to compare data such as delivery time and delivery fee. Built with Django, Python, Ajax, jQuery, Selenium, and Bootstrap.</div>
                     </div>
                 </div>
-
                 <div className="container">
                     <img alt="pingpong" className="projectPics" src={PingPong}></img>
                     <div className="centered overlay overlayRight">
@@ -43,7 +39,6 @@ export default function Projects() {
                         <div className="textDetails">Classic game of Ping Pong built with Javascript, HTML, and CSS.</div>
                     </div>
                 </div>
-
                 <div className="container">
                     <img alt="apartmate" className="projectPics" src={Apartmate}></img> 
                     <div className="centered overlay overlayRight">
@@ -72,8 +67,6 @@ export default function Projects() {
                     </div>
                 </div>   
             </div>
-
         </div>
-
     )
 }
