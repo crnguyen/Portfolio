@@ -8,7 +8,6 @@ export default function Resume () {
     const [pageNumber ] = useState(1);
     const [setNumPages] = useState(null);
     function onDocumentLoadSuccess({ numPages }) {
-        // setNumPages(numPages);
       }
       pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
     return (
