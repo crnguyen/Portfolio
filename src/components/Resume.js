@@ -15,12 +15,6 @@ export default function Resume () {
         <div id="Resume" className="sections">
             <h1 className="titleDecoration">Resume</h1>
             <a href={myresume} download> Download a copy </a>
-            
-            {/* makes resume appear on page */}
-            <Document className="resume" file={myresume} onLoadSuccess={onDocumentLoadSuccess}>
-                <Page pageNumber={pageNumber} />
-            </Document>
-            {/* <p>Page {pageNumber} of {numPages}</p> */}
         </div>
     )
 }
