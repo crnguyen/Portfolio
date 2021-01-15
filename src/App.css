@@ -300,72 +300,15 @@ width: 360px;
 
 /* PHONE */
 @media only screen 
-  and (min-device-width: 414px) 
-  and (max-device-width: 736px) { 
-  /* -------projects section------ */
-  .projectPics {
-    height: 860px;
-    width: 860px;
-  }
+  and (min-device-width: 375px) 
+  and (max-device-width: 800px) { 
+/* -------interests section------ */
+.funFactText {
+  font-size: 10px;
+}
 
-  .container {
-    height: 860px;
-    width: 860px;
-  }
-
-  .container:hover .overlayRight{ 
-    width: 860px; 
-  } 
-
-  .textDetails {
-    padding-left: 20px;
-    padding-right: 20px;
-    font-size: 33px;
-  }
-
-  .projectTitles {
-    padding-bottom: 20px;
-    font-size: 45px;
-  }
-
-  /* -------section titles------ */
-  .titleDecoration {
-    font-size: 30px;
-  }
-
-  /* -------About section------ */
-  .aboutOpening1 {
-    font-size: 90px;
-  }
-  
-  .aboutOpening2 {
-    font-size: 60px;
-  }
-
-  /* -------Appbar------ */
-  .navName {
-    font-size: 25px;
-    text-align: center;
-  }
-
-  /* -------interests section------ */
-  .funFactText {
-    font-size: 25px;
-    color: #0E0908;
-  }
-
-  .funFactPics {
-    height: 350px;
-    width: 350px;
-  }
-
-  .funFactContent h3,
-  .funFactContent p {
-    margin: 10px;
-  }
-
-  .skillsImgs {
-    min-width: 100px;
-    max-width: 150px;
-  }
+html,body{
+  overflow-x: hidden;
+  padding-right: 15px;
+}
 }

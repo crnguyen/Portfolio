@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import myresume from "../assets/Cristina-Nguyen-Resume2020.pdf"
-import { Document, Page, pdfjs} from 'react-pdf';
+import { pdfjs} from 'react-pdf';
 //allows pdf to show up on screen 
 // pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 export default function Resume () {
-    const [pageNumber ] = useState(1);
-    const [setNumPages] = useState(null);
+    const [] = useState(1);
+    const [] = useState(null);
     function onDocumentLoadSuccess({ numPages }) {
       }
       pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
