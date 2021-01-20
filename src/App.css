@@ -84,7 +84,6 @@ a {
   padding-top: 30px;
 }
 
-
 img {
   width: 300px;
 }
@@ -230,6 +229,7 @@ width: 360px;
 
 .socialIcons {
   margin: 5px;
+  padding-top: 5px;
 }
 
 .socialIcons:hover {
