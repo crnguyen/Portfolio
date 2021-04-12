@@ -74,7 +74,7 @@ function Nav(props) {
       <img src={ProfileImg} alt="logo" className={classes.logo} />
       <Divider />
       <List>
-        {['About', 'Skills', 'Projects', 'Contributions', 'Funfacts','Contact','Resume'].map((text) => (
+        {['About', 'Skills', 'Projects', 'Contributions', 'Funfacts','Contact'].map((text) => (
           <a key={text} component={Link} href={"#" + text}>
             <ListItemText activestyle={{color: 'darkgrey'}} primary={text} className="nav navLinks" />
           </a>
