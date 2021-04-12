@@ -2,13 +2,13 @@
 
 https://cristina-nguyen.com/
 
-deploy instructions
+<!-- deploy instructions
 ---
 
 * npm run build
-* firebase deploy --only hosting
+* firebase deploy --only hosting -->
 
-to do
+<!-- to do
 ---
 * fix mobile layout
-* make interests/about section a carousel
+* make interests/about section a carousel -->
